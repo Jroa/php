@@ -278,3 +278,15 @@ published_at'=> Carbon\Carbon::now()]);
      ],
    ]
 >>>
+
+
+
+$ php artisan make:controller ArticlesController --plain
+
+
+  [Symfony\Component\Console\Exception\RuntimeException]
+  The "--plain" option does not exist.
+
+
+
+$ php artisan make:controller ArticlesController
