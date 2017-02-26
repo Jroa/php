@@ -280,6 +280,10 @@ published_at'=> Carbon\Carbon::now()]);
 >>>
 
 
+//*********************************************************************
+//MVC
+//*********************************************************************
+
 
 $ php artisan make:controller ArticlesController --plain
 
@@ -290,3 +294,65 @@ $ php artisan make:controller ArticlesController --plain
 
 
 $ php artisan make:controller ArticlesController
+
+
+//*********************************************************************
+//Form
+//*********************************************************************
+
+http://stackoverflow.com/questions/34414389/fatalerrorexception-in-htmlserviceprovider-php-line-36-laravel
+
+http://stackoverflow.com/questions/28753767/laravel-5-class-form-not-found
+
+//No olvidar hacer el composer update despues de modificar el composer.json
+
+
+Jonathan@Jonathan-PC MINGW64 /c/xampp/htdocs/learning-laravel-5
+$ composer require illuminate/html
+Using version ^5.0 for illuminate/html
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing illuminate/html (v5.0.0) Downloading: 100%
+Package illuminate/html is abandoned, you should avoid using it. Use laravelcoll                                                                                        ective/html instead.
+Writing lock file
+Generating autoload files
+> Illuminate\Foundation\ComposerScripts::postUpdate
+> php artisan optimize
+Generating optimized class loader
+Jonathan@Jonathan-PC MINGW64 /c/xampp/htdocs/learning-laravel-5
+$ composer install
+Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Warning: The lock file is not up to date with the latest changes in composer.jso                                                                                        n. You may be getting outdated dependencies. Run update to update them.
+Nothing to install or update
+Package illuminate/html is abandoned, you should avoid using it. Use laravelcoll                                                                                        ective/html instead.
+Generating autoload files
+> Illuminate\Foundation\ComposerScripts::postInstall
+> php artisan optimize
+Generating optimized class loader
+
+Jonathan@Jonathan-PC MINGW64 /c/xampp/htdocs/learning-laravel-5
+$ compose update
+bash: compose: command not found
+
+Jonathan@Jonathan-PC MINGW64 /c/xampp/htdocs/learning-laravel-5
+$ composer update
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 1 install, 11 updates, 1 removal
+  - Removing illuminate/html (v5.0.0)
+  - Updating mockery/mockery (0.9.7 => 0.9.8) Downloading: 100%
+  - Updating symfony/yaml (v3.2.1 => v3.2.4) Downloading: 100%
+  - Updating sebastian/comparator (1.2.2 => 1.2.4) Downloading: 100%
+  - Updating phpunit/php-timer (1.0.8 => 1.0.9) Downloading: 100%
+  - Updating phpunit/php-token-stream (1.4.9 => 1.4.10) Downloading: 100%                                                                                                 - Updating phpunit/phpunit (4.8.31 => 4.8.35) Downloading: 100%
+  - Updating league/flysystem (1.0.32 => 1.0.35) Downloading: 100%
+  - Updating mtdowling/cron-expression (v1.1.0 => v1.2.0) Downloading: 100%                                                                                               - Updating nesbot/carbon (1.21.0 => 1.22.1) Downloading: 100%
+  - Updating swiftmailer/swiftmailer (v5.4.5 => v5.4.6) Downloading: 100%                                                                                                 - Updating symfony/event-dispatcher (v3.2.1 => v3.2.4) Downloading: 100%                                                                                                - Installing laravelcollective/html (v5.2.5) Downloading: 100%
+Writing lock file
+Generating autoload files
+> Illuminate\Foundation\ComposerScripts::postUpdate
+> php artisan optimize
+Generating optimized class loader
